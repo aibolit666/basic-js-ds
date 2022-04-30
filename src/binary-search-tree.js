@@ -14,6 +14,12 @@ class BinarySearchTree {
   root() {
     return this.start;
   }
+
+  add(data) {
+    const newNode = new Node(data);
+    if (this.start === null) this.start = newNode;
+    else this.insertNode(this.start, newNode);
+  }
 }
 
 module.exports = {
