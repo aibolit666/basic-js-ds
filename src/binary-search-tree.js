@@ -50,6 +50,9 @@ class BinarySearchTree {
   has(data) {
     return this.searchNode(this.start, data) === null ? false : true;
   }
+  find(data) {
+    return this.searchNode(this.start, data);
+  }
 }
 
 module.exports = {
