@@ -10,6 +10,10 @@ class BinarySearchTree {
   constructor() {
     this.start = null;
   }
+
+  root() {
+    return this.start;
+  }
 }
 
 module.exports = {
