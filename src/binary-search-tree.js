@@ -6,7 +6,11 @@ const { NotImplementedError } = require("../extensions/index.js");
  * Implement simple binary search tree according to task description
  * using Node from extensions
  */
-class BinarySearchTree {}
+class BinarySearchTree {
+  constructor() {
+    this.start = null;
+  }
+}
 
 module.exports = {
   BinarySearchTree,
