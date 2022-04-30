@@ -36,6 +36,20 @@ class BinarySearchTree {
       }
     }
   }
+
+  searchNode(node, data) {
+    if (node === null) {
+      return null;
+    }
+
+    if (data < node.data) return this.searchNode(node.left, data);
+    else if (data > node.data) return this.searchNode(node.right, data);
+    else return node;
+  }
+
+  has(data) {
+    return this.searchNode(this.start, data) === null ? false : true;
+  }
 }
 
 module.exports = {
